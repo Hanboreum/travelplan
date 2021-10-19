@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showDatePickerDialog"
+            android:text="0000/00/00" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_gravity="left|center"
+                android:paddingRight="20dp"
+                android:text="금액"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_add_expenses_amount"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="numberSigned|numberDecimal"
+                android:selectAllOnFocus="true"/>
+
+            <Spinner
+                android:id="@+id/spinner_currency"
+                android:entries="@array/currency"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="left|center"
+                android:paddingRight="20dp"
+                android:text="환전된 금액"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_add_expenses_exchanged_amount"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="0"
+                android:gravity="right"
+                android:enabled="false"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text=" 원"
+                android:textSize="18dp"
+                android:gravity="left|center"/>
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="left|center"
+                android:paddingRight="20dp"
+                android:text="사용내역"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_add_expenses_detail"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="left|center"
+                android:paddingRight="20dp"
+                android:text="사용처"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_add_where_to_use"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="left|center"
+                android:paddingRight="20dp"
+                android:text="태그"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_tag"
+                android:entries="@array/tags"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_input_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="clickDeleteButton"
+            android:text="삭제"/>
+
+        <Space
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_input_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="clickSaveButton"
+            android:text="저장"/>
+
+    </LinearLayout>
+
+</LinearLayout>

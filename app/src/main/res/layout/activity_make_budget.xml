@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총 예산을 입력하세요."
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_total_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:selectAllOnFocus="true"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TableRow
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/back">
+
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="식비"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_make_budget_food"
+                android:layout_weight="8"
+                android:layout_marginRight="16dp"
+                android:inputType="number"
+                android:selectAllOnFocus="true"/>
+
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/back">
+
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="교통비"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_make_budget_transportation"
+                android:layout_weight="8"
+                android:layout_marginRight="16dp"
+                android:inputType="number"
+                android:selectAllOnFocus="true"/>
+
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/back">
+
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="숙박비"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_make_budget_room"
+                android:layout_weight="8"
+                android:layout_marginRight="16dp"
+                android:inputType="number"
+                android:selectAllOnFocus="true"/>
+
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/back">
+
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="쇼핑"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_make_budget_shopping"
+                android:layout_weight="8"
+                android:layout_marginRight="16dp"
+                android:inputType="number"
+                android:selectAllOnFocus="true"/>
+
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/back">
+
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="생활용품"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_make_budget_daily_supplies"
+                android:layout_weight="8"
+                android:layout_marginRight="16dp"
+                android:inputType="number"
+                android:selectAllOnFocus="true"/>
+
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/back">
+
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="기타"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_make_budget_etc"
+                android:layout_weight="8"
+                android:layout_marginRight="16dp"
+                android:inputType="number"
+                android:selectAllOnFocus="true"/>
+
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/back">
+
+            <TextView
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="합계"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_make_budget_sum_of_each_category"
+                android:layout_weight="8"
+                android:layout_marginRight="16dp"
+                android:inputType="number"
+                android:enabled="false"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_budget_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:onClick="clickSaveButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_details_daily"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back"
+    android:paddingTop="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_details_daily_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="0000/00/00"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout_details_of_usage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 여기에 각각의 사용내역 추가 -->
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="graph">
+        <item>원형 그래프</item>
+        <item>막대 그래프</item>
+    </string-array>
+
+    <string-array name="tags">
+        <item>식비</item>
+        <item>교통비</item>
+        <item>숙박비</item>
+        <item>쇼핑</item>
+        <item>생활용품</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>KRW</item>
+        <item>USD</item>
+        <item>JPY</item>
+        <item>CNY</item>
+        <item>HKD</item>
+        <item>PHP</item>
+        <item>EUR</item>
+        <item>AUD</item>
+        <item>CAD</item>
+    </string-array>
+
+</resources>
