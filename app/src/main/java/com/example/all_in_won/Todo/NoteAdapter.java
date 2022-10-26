@@ -12,11 +12,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.R;
+import com.example.all_in_won.R;
 
 import java.util.ArrayList;
 
-public class NoteAdapter extends RecyclerView.Adapter<com.example.myapplication.Todo.NoteAdapter.ViewHolder> {
+public class NoteAdapter extends RecyclerView.Adapter<com.example.all_in_won.Todo.NoteAdapter.ViewHolder> {
     private static final String TAG = "NoteAdapter";
 
     //todolist아이템이 들어갈 배열
@@ -27,7 +27,7 @@ public class NoteAdapter extends RecyclerView.Adapter<com.example.myapplication.
     //todo_item.xml을 인플레이션
     @NonNull
     @Override
-    public com.example.myapplication.Todo.NoteAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public com.example.all_in_won.Todo.NoteAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(R.layout.todo_item, parent, false);
 
@@ -36,7 +36,7 @@ public class NoteAdapter extends RecyclerView.Adapter<com.example.myapplication.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull com.example.myapplication.Todo.NoteAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull com.example.all_in_won.Todo.NoteAdapter.ViewHolder holder, int position) {
         Note item = items.get(position);
         holder.setItem(item);
         holder.setLayout();

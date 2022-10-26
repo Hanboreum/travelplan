@@ -9,7 +9,7 @@ import android.util.Log;
 public class NoteDatabase {
     private static final String TAG = "NoteDatabase";
 
-    private static com.example.myapplication.Todo.NoteDatabase database;
+    private static com.example.all_in_won.Todo.NoteDatabase database;
     public static String DATABASE_NAME = "todo.db";
     public static String TABLE_NOTE = "NOTE";
     public static int DATABASE_VERSION = 1;
@@ -23,9 +23,9 @@ public class NoteDatabase {
         this.context = context;
     }
 
-    public static com.example.myapplication.Todo.NoteDatabase getInstance(Context context){
+    public static com.example.all_in_won.Todo.NoteDatabase getInstance(Context context){
         if(database == null){
-            database = new com.example.myapplication.Todo.NoteDatabase(context);
+            database = new com.example.all_in_won.Todo.NoteDatabase(context);
         }
 
         return database;

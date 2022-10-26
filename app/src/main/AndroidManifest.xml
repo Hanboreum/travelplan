@@ -60,7 +60,7 @@
             android:exported="false"
             android:launchMode="singleTask" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainView"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -68,6 +68,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Call.Calmain"/>
+        <activity android:name=".Todo.Todomain"/>
+        <activity android:name=".MainActivity"/>
+
 
     </application>
 
