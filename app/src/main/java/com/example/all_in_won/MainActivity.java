@@ -1,8 +1,7 @@
 package com.example.all_in_won;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ComponentName;
 import android.content.DialogInterface;
@@ -23,7 +22,7 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnLongClickListener {
+public class MainActivity extends Activity implements View.OnLongClickListener {
 
     long initTime;
 
@@ -285,6 +284,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
         return popupMenu;
     }
+
 
 
     private void showToast(String msg){

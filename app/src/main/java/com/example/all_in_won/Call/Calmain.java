@@ -1,6 +1,7 @@
 package com.example.all_in_won.Call;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,13 +10,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.all_in_won.R;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-public class Calmain extends AppCompatActivity
+public class Calmain extends Activity
 {
     public String readDay = null;
     public String str = null;

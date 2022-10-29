@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.all_in_won.Call.Calmain;
 import com.example.all_in_won.Todo.Todomain;
 
+
 public class MainView extends AppCompatActivity {
     Button todo,memo,money,cal,stay,traffic,shop;
 
