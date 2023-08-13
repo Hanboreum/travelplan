@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d3d3d3"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtname"
+        android:text="한보름"
+        android:textSize="30sp"
+        android:textColor="#033B68"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtaddress"
+        android:text="대한민국 경기도"
+        android:textSize="30sp"
+        android:textColor="#033B68"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttel"
+        android:text="010-1111-0000"
+        android:textSize="30sp"
+        android:textColor="#033B68"/>
+</LinearLayout>

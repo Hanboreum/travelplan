@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_margin="10sp">
+    <TextView
+        android:id="@+id/txtcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여기는 내용을 출력합니다.여기는 내용을 출력합니다."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:singleLine="true"/>
+    <TextView
+        android:id="@+id/txtwdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019/11/12 08:54:02"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:padding="10sp"
+        android:layout_below="@id/txtcontent" />
+    <ImageView
+        android:id="@+id/btndel"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_delete"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:id="@+id/btnupdate"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_create_black_24dp"
+        android:layout_below="@id/txtcontent"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

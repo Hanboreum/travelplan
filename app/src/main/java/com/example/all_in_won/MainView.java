@@ -7,8 +7,12 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.all_in_won.Call.Calmain;
+import com.example.all_in_won.Cal.Calmain;
 import com.example.all_in_won.Todo.Todomain;
+
+import Address.AdMainActivity;
+import Memo.MemoMainActivity;
+import Traffic.TrMainActivity;
 
 
 public class MainView extends AppCompatActivity {
@@ -50,6 +54,33 @@ public class MainView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                getIntent();
+
+            }
+        });
+        stay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), AdMainActivity.class);
+                startActivity(intent);
+                getIntent();
+
+            }
+        });
+        traffic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), TrMainActivity.class);
+                startActivity(intent);
+                getIntent();
+
+            }
+        });
+        memo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), MemoMainActivity.class);
                 startActivity(intent);
                 getIntent();
 
