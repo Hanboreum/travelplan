@@ -24,6 +24,7 @@ public class AdMainActivity extends AppCompatActivity {
     SQLiteDatabase db;
     CursorAdapter adapter;
     //SimpleCursorAdapter adapter;
+    //Gittest
     ListView list;
     Cursor cursor;
 
